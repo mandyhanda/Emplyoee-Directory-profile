@@ -1,0 +1,106 @@
+.overlay-container{
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #808080;
+  opacity: 0.8;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  width: 90%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.close:hover,
+.next:hover,
+.previous:hover {
+  cursor: pointer;
+}
+
+.portrait {
+  height: 150px;
+  width: 150px;
+}
+
+.popup * {
+  margin-top: 10px;
+}
+
+.name, .email, .city, .state {
+  margin-top: 5px;
+}
+
+.phone, .address, .birthday {
+  margin-bottom: 5px;
+}
+
+.line {
+  height: 1px;
+  width: 80%;
+  margin: 10px 0;
+  padding: 0;
+  border-top: 1px solid black;
+}
+
+.next {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  font-size: 30px;
+}
+
+.previous {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  font-size: 30px;
+}
+
+
+@media (min-width: 768px) {
+.popup{
+  width: 40%;
+}
+}
+
+
+@media (min-width: 1024px) {
+.popup {
+  width:30%;
+}
+}
